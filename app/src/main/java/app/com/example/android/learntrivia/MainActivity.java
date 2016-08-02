@@ -114,23 +114,23 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-    public void checkAnswer6(View view) {
-        int selected_id = radio_g6.getCheckedRadioButtonId();
-        if (selected_id == R.id.money) {
-            show_answer_correct(answer_6);
-        } else {
-            show_answer_wrong(answer_6);
+        public void checkAnswer6(View view) {
+            int selected_id = radio_g6.getCheckedRadioButtonId();
+            if (selected_id == R.id.money) {
+                show_answer_correct(answer_6);
+            } else {
+                show_answer_wrong(answer_6);
+            }
         }
-    }
 
-    public void checkAnswer7(View view) {
-        int selected_id = radio_g7.getCheckedRadioButtonId();
-        if (selected_id == R.id.max) {
-            show_answer_correct(answer_7);
-        } else {
-            show_answer_wrong(answer_7);
+        public void checkAnswer7(View view) {
+            int selected_id = radio_g7.getCheckedRadioButtonId();
+            if (selected_id == R.id.max) {
+                show_answer_correct(answer_7);
+            } else {
+                show_answer_wrong(answer_7);
+            }
         }
-    }
 
         private void show_answer_correct(TextView answer_textView) {
 
