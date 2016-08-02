@@ -1,5 +1,6 @@
 package app.com.example.android.learntrivia;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -134,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
 
         private void show_answer_correct(TextView answer_textView) {
 
-                answer_textView.setTextColor(getResources().getColor(android.R.color.holo_green_light));
+                answer_textView.setTextColor(Color.BLUE);
                 answer_textView.setText("Great!");
 
                 //if (score < 1) {
@@ -146,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
 
         private void show_answer_wrong(TextView answer_textView){
                 answer_textView.setText("Oops, no point!");
-                answer_textView.setTextColor(getResources().getColor(android.R.color.holo_red_dark));
+                answer_textView.setTextColor(Color.MAGENTA);
                 //Toast.makeText(this, score + " point!", Toast.LENGTH_LONG).show();
 
         }
